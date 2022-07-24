@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="">
@@ -24,21 +24,19 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                 </li>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="nav-item">
+                <a class="nav-link" href="#bagpack">
                   backpack
                 </a>
             </li>
-            <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-                
-              
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                <li class="nav-item">
+                <a class="nav-link" href="#subscribe">
+                  Subscribe
+                </a>
+            </li>
+            
                 </form>
               </div>
             </div>
@@ -143,7 +141,7 @@
 </section>
     <!-- categories end  -->
     <!-- shoes section start  -->
-    <section class="container my-5">
+    <section class="container my-5" id="shoes">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col">
               <div class="card h-100 border border-0 shadow-lg">
@@ -186,7 +184,7 @@
 
     <!-- shoes section end  -->
     <!-- backpack section start  -->
-    <section class="container my-5">
+    <section class="container my-5" id="bagpack">
         <h2>Bagpack</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col">
@@ -233,9 +231,36 @@
     </section>
 
     <!-- backpack section end  -->
+    <!-- subscribe start  -->
+    <section style="height: 350px;" class="container rounded-3 d-flex justify-content-center align-items-center bg-info" id="subscribe">
+       <div>
+        <h2>Lets stay in touch</h2>
+        <p>Get updates on sales, specials and more</p>
+        <form >
+            <div class="mb-1">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            
+           
+            <button  type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    
+       </div>
+    </section>
+
+    <!-- subscribe end  -->
+
 
 </main>
-
+<footer class="mt-5 text-center">
+    <p>
+        <small>
+            ©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.
+        </small>
+    </p>
+</footer>
 
 
 
